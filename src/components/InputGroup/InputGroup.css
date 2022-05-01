@@ -1,0 +1,12 @@
+.form__group{
+margin: 23px 10px 0px 17px;
+display: flex;
+justify-content: space-between;
+}
+.form__group .form__field{
+    border: none;
+    border-bottom: 1px solid;
+    margin-left: 10px;
+    width: 180px;
+    outline: none;
+}

@@ -1,38 +1,81 @@
-.App {
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.main_section{
+  background-image: url('./image/bg.jpg');
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  
+}
+.main_section .chatBot{
+  width: 70px;
+  height: 70px;
+  border-radius: 50px;
+  position: absolute;
+  bottom: 0;
+  right: 5%;
+  background-color: #fff;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  cursor: pointer;
+
+}
+.main_section .chatBot p{
+ margin-top: 23px;
+
+}
+.main_section .main_sub_section{
+    width: 100%;
+    height: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+
+.main_section .main_sub_section .chat_bot_modal{
+  width: 350px;
+  height: 400px;
+  background-color: #fff;
+  position: absolute;
+  border: 1px solid black;
+  cursor: pointer;
+  border-radius: 10px;
+  right: 0;
+  bottom: 10%;
+}
+.main_section .main_sub_section .chat_bot_modal .chat_body{
+  border: 1px solid black;
+  width: 85%;
+  height: 90%;
+  position: relative;
+  top: 5%;
+  left: 5%;
+}
+.main_section .main_sub_section .chat_bot_modal .chat_body .head{
+  position: absolute;
+  width: 100%;
+  height: 10%;
+  border-bottom: 1px solid black;
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.main_section .main_sub_section .chat_bot_modal .chat_body .body{
+  position: absolute;
+  top: 10%;
+}
+h4{
+  padding: 5px 0px 0px 25px;
+}
+
+.waterMark{
+  font-size: 70px;
+  color:lightgrey;
+  transform:rotate(300deg);
+    -webkit-transform:rotate(300deg);
+    position: absolute;
+    top: 30%;
 }
